@@ -12,3 +12,6 @@
 * Wait for a compressed message from client.
 * Decompress message using Huffman decoding.
 * Send response to client with the decompressed message.
+
+
+#### Disclaimer: Sagemath python library has been used in this project - https://www.sagemath.org/
