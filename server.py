@@ -1,13 +1,11 @@
 import socket
 import json
 
-
 from sage.coding.source_coding.huffman import Huffman, frequency_table
 from sage.all import ZZ
 
 HOST = '127.0.0.1'
 PORT = 12345
-
 
 def socket_listening():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -22,7 +20,7 @@ def socket_listening():
 def huffman_decompression(message, f_table):
     huffman = Huffman(f_table)
 
-    # return compressed message
+    # return message
     return huffman.decode(message)
 
 
